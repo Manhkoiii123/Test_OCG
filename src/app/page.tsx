@@ -10,7 +10,7 @@ export default function Home() {
         title="All setting packs"
         description="Combine task types, fields, status, labels, automation together to quickly update multiple project."
       />
-      <div className="grid grid-cols-3 gap-y-8 pt-8">
+      <div className="grid grid-cols-3 3xl:grid-cols-4 gap-y-8 pt-8">
         <CreateCard />
         <Card board={["learnbase"]} />
         <Card board={["learnbase", "learnbase", "learnbase", "learnbase"]} />

@@ -17,6 +17,9 @@ export default {
       fontFamily: {
         sf: ["SF Pro Text", "sans-serif"],
       },
+      screens: {
+        "3xl": "1900px",
+      },
     },
   },
   plugins: [],
