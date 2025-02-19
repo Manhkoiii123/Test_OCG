@@ -108,10 +108,14 @@ const Sidebar = () => {
             </div>
           </>
         </div>
+        <div className={`h-[1px] bg-[#A1A1AA3D] w-full mt-1 `} />
+
         <div className="flex items-center justify-between pl-2 mt-3">
           <div className="flex gap-2">
             <Image
-              src={"/logo.svg"}
+              src={
+                "https://s3-alpha-sig.figma.com/img/021a/d68b/b5a7307ce6e93b58178743c60331ba17?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qlEx2eeSr3Jcp3aHIB6WAHbvwFktDk09u0P1OJXUsp42DBeE7~yJ8-Qdakhzklp9R2GQtw5kEw4U6-tPjoHH7fEud5V4xCibZIssXmX51Oan~HnzuI3vFWi3haPfafnvu5pT-H6GXGZ8EISp7eV7e0n7F32WdRswhiY-7dIQWIki41HmkN0Az2xH4EQXkCBVC8echcw9mvJUohf1y1TMKxPTtb9QaDu589jR9TXcuxyjULILN9266V5ZraV3pjNTdHEg3UhsP6tTKQW~d~Y0LTVWmDVhiR89bH5bGoUtM9dNlVgMYi1KlKvvaDbAKycNYdi7pm5p-JkvSpbMyRrfwA__"
+              }
               alt="Next.js logo"
               width={20}
               height={20}

@@ -6,14 +6,19 @@ import FlashIcon from "@/app/icon/FlashIcon";
 import StatusIcon from "@/app/icon/StatusIcon";
 import TagIcon from "@/app/icon/TagIcon";
 
-const Card = ({ board }: { board: string[] }) => {
+const Card = ({
+  board,
+  title = "Approval & Feedback demo",
+  description = "Use this pack for product development process.",
+}: {
+  board: string[];
+  title?: string;
+  description?: string;
+}) => {
   return (
     <div className="p-4 min-h-[160px] border border-[#A1A1AA3D] max-w-[370px]  rounded-md flex flex-col justify-between">
       <div>
-        <Heading
-          title="Approval & Feedback demo"
-          description="Use this pack for product development process."
-        />
+        <Heading title={title} description={description} />
         <div className="flex gap-2 my-4">
           <Chip number={4} icon={<CheckBlueIcon />} colorText="#3B82F6" />
           <Chip number={8} icon={<StatusIcon />} colorText="#EAB308" />
@@ -40,10 +45,10 @@ const Card = ({ board }: { board: string[] }) => {
                 <>
                   <div
                     className={`
-                      absolute border-gray-200 left-1/2 top-full z-20 mt-3 -translate-x-1/2 border whitespace-nowrap rounded-lg shadow-lg bg-white px-4 py-[6px] font-medium text-[12px] leading-[16px] text-textPrimary opacity-0 group-hover:opacity-100
+                      absolute border-gray-200 w-[300px]  left-1/2  top-full z-20 mt-3 -translate-x-1/2 border  rounded-lg shadow-lg bg-white px-4 py-[6px] font-medium text-[12px] leading-[16px] text-textPrimary opacity-0 group-hover:opacity-100
                     `}
                   >
-                    <div className="w-0 h-0  absolute left-1/2 -translate-x-1/2 top-[-12px] -z-10 border-l-[16px] border-l-transparent border-b-[12px] border-b-gray-200 border-r-[16px] border-r-transparent"></div>
+                    <div className="w-0 h-0  absolute left-1/2 -translate-x-1/2 top-[-12px] -z-10 border-l-[12px] border-l-transparent border-b-[12px] border-b-gray-200 border-r-[12px] border-r-transparent"></div>
                     {board.join(", ")}
                   </div>
                 </>

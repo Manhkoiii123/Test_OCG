@@ -1,7 +1,7 @@
 "use client";
 import AssignIcon from "@/app/icon/AssignIcon";
 import EllipsisHorizontalIcon from "@/app/icon/EllipsisHorizontalIcon";
-import PencilIcon from "@/app/icon/Pencilicon";
+import PencilIcon from "@/app/icon/PencilIcon";
 import TrashIcon from "@/app/icon/TrashIcon";
 import { useState, useRef, useEffect } from "react";
 
@@ -42,13 +42,18 @@ const DropdownMenu = () => {
         }`}
       >
         {menuItems.map((item, index) => (
-          <div
-            key={index}
-            className={`flex items-center gap-2 cursor-pointer w-full px-3 py-2 text-sm text-textPrimary hover:bg-gray-100 border-l-4 border-transparent`}
-          >
-            {item.icon}
-            <span className="mt-1">{item.label}</span>
-          </div>
+          <>
+            {index === 2 && (
+              <div className={`h-[1px] bg-[#A1A1AA3D] w-full  `} />
+            )}
+            <div
+              key={index}
+              className={`flex items-center gap-2 cursor-pointer w-full px-3 py-2 text-sm text-textPrimary hover:bg-gray-100 border-l-4 border-transparent`}
+            >
+              {item.icon}
+              <span className="mt-1">{item.label}</span>
+            </div>
+          </>
         ))}
       </div>
     </div>
