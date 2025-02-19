@@ -18,7 +18,7 @@ const Card = ({
   return (
     <div className="p-4 min-h-[160px] border border-[#A1A1AA3D] max-w-[370px]  rounded-md flex flex-col justify-between">
       <div>
-        <Heading title={title} description={description} />
+        <Heading small title={title} description={description} />
         <div className="flex gap-2 my-4">
           <Chip number={4} icon={<CheckBlueIcon />} colorText="#3B82F6" />
           <Chip number={8} icon={<StatusIcon />} colorText="#EAB308" />
